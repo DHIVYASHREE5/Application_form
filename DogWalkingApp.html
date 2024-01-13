@@ -1,0 +1,60 @@
+<html>
+<head>
+<title> DogWalkingApp.com </title>
+<script>
+function display()
+{
+dog = new Array(8)
+var button1 = document.getElementById("b1");
+var button2 = document.getElementById("b2");
+
+if (b1.checked){
+    alert("We will pick your dog for a walk !!");
+}else if (b2.checked) {
+   alert("Your dog will be taken care !!");
+}
+
+dog[0]=frm1.t1.value
+dog[1]=frm1.t2.value
+dog[2]=frm1.t3.value
+
+dog[3]=frm1.t4.value
+dog[4]=frm1.t5.value
+dog[5]=frm1.t6.value
+dog[6]=frm1.t7.value
+
+
+
+document.write("Dog Name: "+ dog[0] + "<br>")
+document.write("Owner Name: "+ dog[1] + "<br>")
+document.write("From Date: "+ dog[2] + "<br>")
+document.write("To Date: "+ dog[3] + "<br>")
+document.write("Location: "+ dog[4] + "<br>")
+
+
+}
+
+</script>
+</head>
+
+<body>
+<form name="frm1">
+<h1><b>Dog Walking App</b></h1>
+<h3>When you are not around, we will take care of your dogs!!!!</h3><br><br>
+Enter Dog Name:<input type="text" name="t1"><br><br>
+Enter Owner Name:<input type="text" name="t2"><br><br>
+From Date:<input type="text" name="t3"><br><br>
+To Date:<input type="text" name="t4"><br><br>
+
+
+
+For a Walk:<input type="radio" name="t6" value="For a Walk" id="b1"/>
+Take Care:<input type="radio" name="t7" value="Take care" id="b2"/><br><br>
+
+</select><br><br>
+Location:<br><textarea id="location" name="t5" rows="4" cols="50"> </textarea><br><br>
+
+<input type="button" name="b3" value="Upload!" onClick="display()">
+</body>
+</form>
+</html>   
